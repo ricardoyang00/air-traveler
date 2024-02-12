@@ -19,7 +19,13 @@ a range of functionalities to explore, query, and manage air travel information 
 ## Installing
 To build the program code using **makefile**:
 
-1. Build the program using make:
+1. Clone the repository:
+```bash
+$ git clone git@github.com:ricardoyang00/feup-aed-02.git
+$ cd feup-aed-02/
+```
+
+2. Build the program using make:
 ```bash
 $ make
 ```
