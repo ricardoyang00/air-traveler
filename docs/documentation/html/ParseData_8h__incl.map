@@ -1,0 +1,19 @@
+<map id="code/ParseData.h" name="code/ParseData.h">
+<area shape="rect" id="node1" title="Header file containing functionalities to parse data related to the Air Travel Flights." alt="" coords="529,5,664,32"/>
+<area shape="rect" id="node2" href="$Data_8h.html" title="Header file containing structures and classes related to airport and airline data representation." alt="" coords="668,155,733,181"/>
+<area shape="rect" id="node10" href="$Graph_8h.html" title="Header file containing structures and classes related to graph representation." alt="" coords="383,80,456,107"/>
+<area shape="rect" id="node17" title=" " alt="" coords="635,80,708,107"/>
+<area shape="rect" id="node3" href="$Utilities_8h.html" title="Contains utility functions for string manipulation and geographical calculations." alt="" coords="507,229,593,256"/>
+<area shape="rect" id="node9" title=" " alt="" coords="705,304,768,331"/>
+<area shape="rect" id="node4" title=" " alt="" coords="305,304,385,331"/>
+<area shape="rect" id="node5" title=" " alt="" coords="222,304,281,331"/>
+<area shape="rect" id="node6" title=" " alt="" coords="409,304,494,331"/>
+<area shape="rect" id="node7" title=" " alt="" coords="519,304,581,331"/>
+<area shape="rect" id="node8" title=" " alt="" coords="606,304,681,331"/>
+<area shape="rect" id="node11" title=" " alt="" coords="508,155,579,181"/>
+<area shape="rect" id="node12" title=" " alt="" coords="5,155,68,181"/>
+<area shape="rect" id="node13" title=" " alt="" coords="92,155,149,181"/>
+<area shape="rect" id="node14" title=" " alt="" coords="174,155,217,181"/>
+<area shape="rect" id="node15" title=" " alt="" coords="241,155,283,181"/>
+<area shape="rect" id="node16" title=" " alt="" coords="308,155,432,181"/>
+</map>

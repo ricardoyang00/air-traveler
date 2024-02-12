@@ -1,0 +1,204 @@
+\hypertarget{classEdge}{}\doxysection{Edge$<$ T $>$ Class Template Reference}
+\label{classEdge}\index{Edge$<$ T $>$@{Edge$<$ T $>$}}
+
+
+Class representing an edge in a graph connecting two vertices.  
+
+
+
+
+{\ttfamily \#include $<$Graph.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEdge_ab98cc24bd7355eb1c39ffca6fac0c408}{Edge}} (\mbox{\hyperlink{classVertex}{Vertex}}$<$ T $>$ $\ast$d, double \mbox{\hyperlink{classEdge_a11d2f061c130cc03798924f2fac484be}{distance}})
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classEdge}{Edge}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVertex}{Vertex}}$<$ T $>$ $\ast$ \mbox{\hyperlink{classEdge_a9a2de066dff8513dd788d553fc1d0c81}{get\+Dest}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the destination vertex of this edge. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEdge_a163ee9f75e35701e6a04ea1c987e4094}{set\+Dest}} (\mbox{\hyperlink{classVertex}{Vertex}}$<$ T $>$ $\ast$\mbox{\hyperlink{classEdge_ae4d65678b91bd9d814af4720ad87cd0c}{dest}})
+\begin{DoxyCompactList}\small\item\em Sets the destination vertex of this edge. \end{DoxyCompactList}\item 
+const std\+::set$<$ \mbox{\hyperlink{classAirline}{Airline}} $>$ \& \mbox{\hyperlink{classEdge_a880901d866d77a6b1411efdda354b71f}{get\+Airlines}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the set of airlines associated with this edge. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEdge_a452a163cd1f76471e7e4e2de8cc09160}{add\+Airline}} (const \mbox{\hyperlink{classAirline}{Airline}} \&airline)
+\begin{DoxyCompactList}\small\item\em Adds an airline to the set associated with this edge. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classEdge_ac39299d161c3c804b78bbf41ad8b19e0}{get\+Distance}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the distance of this edge. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEdge_a887a1e87af50c7524f832add49b92942}{set\+Distance}} (double \mbox{\hyperlink{classEdge_a11d2f061c130cc03798924f2fac484be}{distance}})
+\begin{DoxyCompactList}\small\item\em Sets the distance of this edge. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEdge_ae4d65678b91bd9d814af4720ad87cd0c}\label{classEdge_ae4d65678b91bd9d814af4720ad87cd0c}} 
+\mbox{\hyperlink{classVertex}{Vertex}}$<$ T $>$ $\ast$ \mbox{\hyperlink{classEdge_ae4d65678b91bd9d814af4720ad87cd0c}{dest}}
+\begin{DoxyCompactList}\small\item\em Pointer to the destination vertex. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEdge_a11d2f061c130cc03798924f2fac484be}\label{classEdge_a11d2f061c130cc03798924f2fac484be}} 
+double \mbox{\hyperlink{classEdge_a11d2f061c130cc03798924f2fac484be}{distance}}
+\begin{DoxyCompactList}\small\item\em The distance between source and destination vertices in kilometers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEdge_a4d3f3878ef64309aa30e0c1b5a631981}\label{classEdge_a4d3f3878ef64309aa30e0c1b5a631981}} 
+std\+::set$<$ \mbox{\hyperlink{classAirline}{Airline}} $>$ \mbox{\hyperlink{classEdge_a4d3f3878ef64309aa30e0c1b5a631981}{airlines}}
+\begin{DoxyCompactList}\small\item\em The set of airlines associated with this edge. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classEdge_aefa9b76cd57411c5354e5620dc2d84dd}{Graph$<$ T $>$}}
+\begin{DoxyCompactList}\small\item\em Grants the \mbox{\hyperlink{classGraph}{Graph}} class access to private members of \mbox{\hyperlink{classEdge}{Edge}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classEdge_a2e120a12dec663fa334633b4f26cbed8}{Vertex$<$ T $>$}}
+\begin{DoxyCompactList}\small\item\em Grants the \mbox{\hyperlink{classVertex}{Vertex}} class access to private members of \mbox{\hyperlink{classEdge}{Edge}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Edge$<$ T $>$}
+
+Class representing an edge in a graph connecting two vertices. 
+
+An \mbox{\hyperlink{classEdge}{Edge}} object defines a connection between two vertices in a graph. It holds information about the destination vertex, distance, and associated airlines. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The data type of the vertex. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEdge_ab98cc24bd7355eb1c39ffca6fac0c408}\label{classEdge_ab98cc24bd7355eb1c39ffca6fac0c408}} 
+\index{Edge$<$ T $>$@{Edge$<$ T $>$}!Edge@{Edge}}
+\index{Edge@{Edge}!Edge$<$ T $>$@{Edge$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Edge()}{Edge()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$\+::\mbox{\hyperlink{classEdge}{Edge}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVertex}{Vertex}}$<$ T $>$ $\ast$}]{d,  }\item[{double}]{distance }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classEdge}{Edge}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & Pointer to the destination vertex. \\
+\hline
+{\em distance} & The distance to the destination vertex. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEdge_a452a163cd1f76471e7e4e2de8cc09160}\label{classEdge_a452a163cd1f76471e7e4e2de8cc09160}} 
+\index{Edge$<$ T $>$@{Edge$<$ T $>$}!addAirline@{addAirline}}
+\index{addAirline@{addAirline}!Edge$<$ T $>$@{Edge$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{addAirline()}{addAirline()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$\+::add\+Airline (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classAirline}{Airline}} \&}]{airline }\end{DoxyParamCaption})}
+
+
+
+Adds an airline to the set associated with this edge. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em airline} & The airline to add. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEdge_a880901d866d77a6b1411efdda354b71f}\label{classEdge_a880901d866d77a6b1411efdda354b71f}} 
+\index{Edge$<$ T $>$@{Edge$<$ T $>$}!getAirlines@{getAirlines}}
+\index{getAirlines@{getAirlines}!Edge$<$ T $>$@{Edge$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getAirlines()}{getAirlines()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const std\+::set$<$ \mbox{\hyperlink{classAirline}{Airline}} $>$ \& \mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$\+::get\+Airlines}
+
+
+
+Retrieves the set of airlines associated with this edge. 
+
+\begin{DoxyReturn}{Returns}
+Constant reference to the set of airlines. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEdge_a9a2de066dff8513dd788d553fc1d0c81}\label{classEdge_a9a2de066dff8513dd788d553fc1d0c81}} 
+\index{Edge$<$ T $>$@{Edge$<$ T $>$}!getDest@{getDest}}
+\index{getDest@{getDest}!Edge$<$ T $>$@{Edge$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getDest()}{getDest()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classVertex}{Vertex}}$<$ T $>$ $\ast$ \mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$\+::get\+Dest}
+
+
+
+Retrieves the destination vertex of this edge. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the destination vertex. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEdge_ac39299d161c3c804b78bbf41ad8b19e0}\label{classEdge_ac39299d161c3c804b78bbf41ad8b19e0}} 
+\index{Edge$<$ T $>$@{Edge$<$ T $>$}!getDistance@{getDistance}}
+\index{getDistance@{getDistance}!Edge$<$ T $>$@{Edge$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getDistance()}{getDistance()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+double \mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$\+::get\+Distance}
+
+
+
+Retrieves the distance of this edge. 
+
+\begin{DoxyReturn}{Returns}
+The distance between vertices. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEdge_a163ee9f75e35701e6a04ea1c987e4094}\label{classEdge_a163ee9f75e35701e6a04ea1c987e4094}} 
+\index{Edge$<$ T $>$@{Edge$<$ T $>$}!setDest@{setDest}}
+\index{setDest@{setDest}!Edge$<$ T $>$@{Edge$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setDest()}{setDest()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$\+::set\+Dest (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVertex}{Vertex}}$<$ T $>$ $\ast$}]{dest }\end{DoxyParamCaption})}
+
+
+
+Sets the destination vertex of this edge. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dest} & Pointer to the destination vertex. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEdge_a887a1e87af50c7524f832add49b92942}\label{classEdge_a887a1e87af50c7524f832add49b92942}} 
+\index{Edge$<$ T $>$@{Edge$<$ T $>$}!setDistance@{setDistance}}
+\index{setDistance@{setDistance}!Edge$<$ T $>$@{Edge$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setDistance()}{setDistance()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classEdge}{Edge}}$<$ T $>$\+::set\+Distance (\begin{DoxyParamCaption}\item[{double}]{distance }\end{DoxyParamCaption})}
+
+
+
+Sets the distance of this edge. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em distance} & The distance between vertices. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classEdge_aefa9b76cd57411c5354e5620dc2d84dd}\label{classEdge_aefa9b76cd57411c5354e5620dc2d84dd}} 
+\index{Edge$<$ T $>$@{Edge$<$ T $>$}!Graph$<$ T $>$@{Graph$<$ T $>$}}
+\index{Graph$<$ T $>$@{Graph$<$ T $>$}!Edge$<$ T $>$@{Edge$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Graph$<$ T $>$}{Graph< T >}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+friend class \mbox{\hyperlink{classGraph}{Graph}}$<$ T $>$\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Grants the \mbox{\hyperlink{classGraph}{Graph}} class access to private members of \mbox{\hyperlink{classEdge}{Edge}}. 
+
+This friendship declaration allows the \mbox{\hyperlink{classGraph}{Graph}} class to access private and protected members of the \mbox{\hyperlink{classEdge}{Edge}} class, enabling efficient graph operations and maintaining a close relationship between the classes. \mbox{\Hypertarget{classEdge_a2e120a12dec663fa334633b4f26cbed8}\label{classEdge_a2e120a12dec663fa334633b4f26cbed8}} 
+\index{Edge$<$ T $>$@{Edge$<$ T $>$}!Vertex$<$ T $>$@{Vertex$<$ T $>$}}
+\index{Vertex$<$ T $>$@{Vertex$<$ T $>$}!Edge$<$ T $>$@{Edge$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Vertex$<$ T $>$}{Vertex< T >}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+friend class \mbox{\hyperlink{classVertex}{Vertex}}$<$ T $>$\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Grants the \mbox{\hyperlink{classVertex}{Vertex}} class access to private members of \mbox{\hyperlink{classEdge}{Edge}}. 
+
+This friendship declaration allows the \mbox{\hyperlink{classVertex}{Vertex}} class to access private and protected members of the \mbox{\hyperlink{classEdge}{Edge}} class, facilitating interactions necessary for graph manipulation and traversal. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+code/\mbox{\hyperlink{Graph_8h}{Graph.\+h}}\end{DoxyCompactItemize}

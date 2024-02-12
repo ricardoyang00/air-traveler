@@ -1,0 +1,519 @@
+\hypertarget{classScript}{}\doxysection{Script Class Reference}
+\label{classScript}\index{Script@{Script}}
+
+
+Handles the interactive operations for the \char`\"{}\+Air Travel Flight Management System.\char`\"{}.  
+
+
+
+
+{\ttfamily \#include $<$Script.\+h$>$}
+
+
+
+Collaboration diagram for Script\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{classScript__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structScript_1_1MenuItem}{Menu\+Item}}
+\begin{DoxyCompactList}\small\item\em Represents an item in the menu with a label and associated action. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classScript_a79d835cde71864c9c70f5381e0361669}{Script}} (const \mbox{\hyperlink{classGraph}{Graph}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ \&\mbox{\hyperlink{classScript_ac043b155ff050e53eedb2f4b009ecc01}{data\+Graph}}, const std\+::set$<$ \mbox{\hyperlink{classAirline}{Airline}} $>$ airlines\+Info)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classScript}{Script}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_a73a1254b03be5b6150f8029f898615da}\label{classScript_a73a1254b03be5b6150f8029f898615da}} 
+void \mbox{\hyperlink{classScript_a73a1254b03be5b6150f8029f898615da}{run}} ()
+\begin{DoxyCompactList}\small\item\em Initiates the interactive system and displays the main menu. This method serves as the entry point for user interaction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classScript_adb090f23621dd83ffa0eaa63d920487d}{draw\+Box}} (const string \&text)
+\begin{DoxyCompactList}\small\item\em Draws a box around the provided text on the screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classScript_ad67cf0e9a2a37f6ca11eed2f1464811a}{show\+Menu}} (const string \&menu\+Name, const vector$<$ \mbox{\hyperlink{structScript_1_1MenuItem}{Menu\+Item}} $>$ \&menu\+Items)
+\begin{DoxyCompactList}\small\item\em Displays a menu with the provided items and handles user input. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_afc503c9f19dedd0ec73370001ee497e2}\label{classScript_afc503c9f19dedd0ec73370001ee497e2}} 
+void \mbox{\hyperlink{classScript_afc503c9f19dedd0ec73370001ee497e2}{clear\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Clears the screen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_a703a0b47eb4b37ce9dc4ac56d0064d56}\label{classScript_a703a0b47eb4b37ce9dc4ac56d0064d56}} 
+void \mbox{\hyperlink{classScript_a703a0b47eb4b37ce9dc4ac56d0064d56}{action\+Go\+Back}} ()
+\begin{DoxyCompactList}\small\item\em Handles the action for going back in the menu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_aad92bca1e6622aabec241593e4190384}\label{classScript_aad92bca1e6622aabec241593e4190384}} 
+void \mbox{\hyperlink{classScript_aad92bca1e6622aabec241593e4190384}{back\+To\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Waits for the user to press the Enter key before returning to the main menu. It prompts the user to press Enter to continue and waits for the input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_abdbc2dd4c7657becb0be1b7841137960}{print\+Airport\+Info}} (const \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$airport)
+\begin{DoxyCompactList}\small\item\em Prints detailed information about an airport. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_a803c6dc81e1146f96169693332e1747f}{print\+Airport\+Info\+Oneline}} (const \mbox{\hyperlink{classAirport}{Airport}} \&airport)
+\begin{DoxyCompactList}\small\item\em Prints information about an airport in a single line. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_a5204718aed8eea260f7954b065bc05e4}\label{classScript_a5204718aed8eea260f7954b065bc05e4}} 
+void \mbox{\hyperlink{classScript_a5204718aed8eea260f7954b065bc05e4}{global\+Number}} ()
+\begin{DoxyCompactList}\small\item\em Displays a submenu for consulting some global statistics about the air travel network. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_aff2e7ecb611c92c6458f3acb3b9ca51f}\label{classScript_aff2e7ecb611c92c6458f3acb3b9ca51f}} 
+void \mbox{\hyperlink{classScript_aff2e7ecb611c92c6458f3acb3b9ca51f}{number\+Of\+Airports}} ()
+\begin{DoxyCompactList}\small\item\em Displays the total number of airports in the air travel network. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_a4549cb8dbfb26f6dd20821b4bb0cee20}\label{classScript_a4549cb8dbfb26f6dd20821b4bb0cee20}} 
+void \mbox{\hyperlink{classScript_a4549cb8dbfb26f6dd20821b4bb0cee20}{number\+Of\+Flights}} ()
+\begin{DoxyCompactList}\small\item\em Displays the total number of flights in the air travel network. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_ac4c62db9ad8cded32c5e82885ae57247}\label{classScript_ac4c62db9ad8cded32c5e82885ae57247}} 
+void \mbox{\hyperlink{classScript_ac4c62db9ad8cded32c5e82885ae57247}{number\+Of\+Flight\+Routes}} ()
+\begin{DoxyCompactList}\small\item\em Displays the total number of flight routes in the air travel network. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_a7bb32e51f827a58173f76010faae7339}\label{classScript_a7bb32e51f827a58173f76010faae7339}} 
+void \mbox{\hyperlink{classScript_a7bb32e51f827a58173f76010faae7339}{flights\+Per\+City}} ()
+\begin{DoxyCompactList}\small\item\em Lists the total number of flights departing from each city within the air travel network. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_a1560ca8c3fb9a3b47124f469adfed88f}\label{classScript_a1560ca8c3fb9a3b47124f469adfed88f}} 
+void \mbox{\hyperlink{classScript_a1560ca8c3fb9a3b47124f469adfed88f}{flights\+Per\+Airline}} ()
+\begin{DoxyCompactList}\small\item\em Lists the total number of flights operated by each airline in the air travel network. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_aedea7693139ce5d26ce5f81ee20990e8}{countries\+Flown\+To\+From\+City}} ()
+\begin{DoxyCompactList}\small\item\em Displays the number of different countries that a city can fly to. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_a888b62837379252ed5f5494f8392967b}{destinations\+Available\+With\+Lay\+Overs}} (\mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$airport)
+\begin{DoxyCompactList}\small\item\em Displays the number of airports, cities and countries reachable within X lay-\/overs when flying out from a specific airport. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_aa7dbdab2bfab5a03d935ca490ed217f1}{given\+Airport\+Statistics}} (\mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$airport)
+\begin{DoxyCompactList}\small\item\em Displays 7 different statistics related to the specified airport. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_a863a8a015f8c8328e46715ebacbad22d}\label{classScript_a863a8a015f8c8328e46715ebacbad22d}} 
+void \mbox{\hyperlink{classScript_a863a8a015f8c8328e46715ebacbad22d}{maximum\+Trip}} ()
+\begin{DoxyCompactList}\small\item\em Displays the flight trip(s) with the greatest number of stops in between them and the paths of the airports from source to destination. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_a9eda4e7090041a45af1a64981c3304db}\label{classScript_a9eda4e7090041a45af1a64981c3304db}} 
+void \mbox{\hyperlink{classScript_a9eda4e7090041a45af1a64981c3304db}{top\+KAirport\+Air\+Traffic}} ()
+\begin{DoxyCompactList}\small\item\em Displays the top K airport with the greatest air traffic capacity (flights arriving and departing from the airport). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_aaf3063235aa3df7352c130f3c34bf942}\label{classScript_aaf3063235aa3df7352c130f3c34bf942}} 
+void \mbox{\hyperlink{classScript_aaf3063235aa3df7352c130f3c34bf942}{essential\+Airports}} ()
+\begin{DoxyCompactList}\small\item\em Displays all the airports that are essential to the network’s circulation capability, if removed, areas of the network start to be unreachable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_abafa79cf66e4a495fdd233aa920a9c6b}{airport\+Statistics}} (\mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$airport)
+\begin{DoxyCompactList}\small\item\em Displays a submenu where user can select to see the specified airport statistics or to set as source/destination if chosen the option travel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_abd2bb21aa7f86f40e69b3b2864f7faec}{list\+And\+Choose\+Airport}} (vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$ airports, const string \&name, const string \&type\+Name)
+\begin{DoxyCompactList}\small\item\em List airports based on a specified criterion (name, city, or country) and allow the user to choose one for further analysis. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_ae2b28d4d7882ef282ed8e03e739a8ae6}\label{classScript_ae2b28d4d7882ef282ed8e03e739a8ae6}} 
+void \mbox{\hyperlink{classScript_ae2b28d4d7882ef282ed8e03e739a8ae6}{search\+Airports\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Displays a submenu where user can choose different ways to search for an airport. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_a8181545438f0d8b0522ed2c78d8f7f46}\label{classScript_a8181545438f0d8b0522ed2c78d8f7f46}} 
+void \mbox{\hyperlink{classScript_a8181545438f0d8b0522ed2c78d8f7f46}{search\+Airport\+By\+Airport\+Code}} ()
+\begin{DoxyCompactList}\small\item\em Find and display information about a specific airport based on the user-\/provided airport code. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_a2794aad882ae5c3b494220364f169df1}\label{classScript_a2794aad882ae5c3b494220364f169df1}} 
+void \mbox{\hyperlink{classScript_a2794aad882ae5c3b494220364f169df1}{search\+Airport\+By\+Airport\+Name}} ()
+\begin{DoxyCompactList}\small\item\em List airports that contain user-\/provided name in the airport name, considering case and space insensitivity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_a21f837e087a69c676f4f4dc31fa29720}\label{classScript_a21f837e087a69c676f4f4dc31fa29720}} 
+void \mbox{\hyperlink{classScript_a21f837e087a69c676f4f4dc31fa29720}{search\+Airport\+By\+City\+Name}} ()
+\begin{DoxyCompactList}\small\item\em List all airports that are located in cities containing the user-\/provided city name, considering case and space insensitivity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_a97fdb5694e1d1ea90d7beb42b7b6c671}\label{classScript_a97fdb5694e1d1ea90d7beb42b7b6c671}} 
+void \mbox{\hyperlink{classScript_a97fdb5694e1d1ea90d7beb42b7b6c671}{search\+Airport\+By\+Country\+Name}} ()
+\begin{DoxyCompactList}\small\item\em List all airports that are located in countries containing the user-\/provided country name, considering case and space insensitivity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_a9c1d8418cfa15536fc773fe938f94057}\label{classScript_a9c1d8418cfa15536fc773fe938f94057}} 
+void \mbox{\hyperlink{classScript_a9c1d8418cfa15536fc773fe938f94057}{search\+Closest\+Airport}} ()
+\begin{DoxyCompactList}\small\item\em List all airports closest to user-\/provided coordinates (latitude, longitude). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_a72540b96a05c5e7d53f26e768b263f1e}\label{classScript_a72540b96a05c5e7d53f26e768b263f1e}} 
+void \mbox{\hyperlink{classScript_a72540b96a05c5e7d53f26e768b263f1e}{search\+Airlines}} ()
+\begin{DoxyCompactList}\small\item\em Find and display information about a specific airline based on the user-\/provided airport code. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_a3995e5ebb139632cb81fb7aa42417c64}\label{classScript_a3995e5ebb139632cb81fb7aa42417c64}} 
+void \mbox{\hyperlink{classScript_a3995e5ebb139632cb81fb7aa42417c64}{select\+Source}} ()
+\begin{DoxyCompactList}\small\item\em Displays a submenu for user to search for a location to set as the flight source. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_a16d226af6c02b0567d3947e324cbe59c}\label{classScript_a16d226af6c02b0567d3947e324cbe59c}} 
+void \mbox{\hyperlink{classScript_a16d226af6c02b0567d3947e324cbe59c}{select\+Destiny}} ()
+\begin{DoxyCompactList}\small\item\em Displays a submenu for user to search for a location to set as the flight destination. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_afcf214dbe2d1b6906d0c520ad7b2c8e7}{search\+Airport\+By\+City\+And\+Country\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Search for airports based on the user-\/provided city and country names. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_ab8499a24e46537ea85414d2c963ebf39}{extra\+Filters\+Travel}} ()
+\begin{DoxyCompactList}\small\item\em Handles extra filters for travel options. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_a0412f0e0ecbc8ed5dc86606f7e6290d9}{select\+Custom\+Layovers}} ()
+\begin{DoxyCompactList}\small\item\em Allows users to select custom layover airports. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_ad2aa427a62b9754d11f287203a7016e0}{show\+Best\+Flight}} ()
+\begin{DoxyCompactList}\small\item\em Display 2 best flight options\+: travel by same or any airline from source to destination. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_acea555168e10aae19232ea2b058f6b63}{show\+List\+Of\+Best\+Flights}} (vector$<$ pair$<$ set$<$ \mbox{\hyperlink{classAirline}{Airline}} $>$, pair$<$ vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$, double $>$$>$$>$ total\+Paths)
+\begin{DoxyCompactList}\small\item\em Display a list of the best flights based on user preferences. \end{DoxyCompactList}\item 
+vector$<$ pair$<$ set$<$ \mbox{\hyperlink{classAirline}{Airline}} $>$, pair$<$ vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$, double $>$ $>$ $>$ \mbox{\hyperlink{classScript_a9db2578032d91748b4de3cf88b5e45b9}{get\+Best\+Paths\+Same\+Airlines}} (vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$ source, vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$ destination)
+\begin{DoxyCompactList}\small\item\em Find the best flight paths considering the same airline from source to destination. \end{DoxyCompactList}\item 
+vector$<$ pair$<$ set$<$ \mbox{\hyperlink{classAirline}{Airline}} $>$, pair$<$ vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$, double $>$ $>$ $>$ \mbox{\hyperlink{classScript_ad85170d42924fdddba6f3b8af9eaefb7}{get\+Best\+Paths\+All\+Airlines}} (vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$ source, vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$ destination)
+\begin{DoxyCompactList}\small\item\em Find the best flight paths considering all available airlines flying from source to destination. \end{DoxyCompactList}\item 
+vector$<$ pair$<$ set$<$ \mbox{\hyperlink{classAirline}{Airline}} $>$, pair$<$ vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$, double $>$ $>$ $>$ \mbox{\hyperlink{classScript_a9da9f9c8e873ea63d5ac6264830cc4cc}{get\+Best\+Paths\+Same\+Airlines\+With\+Custom\+Layovers}} (vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$ source, vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$ destination)
+\begin{DoxyCompactList}\small\item\em Find the best flight paths considering the same airline from source to destination with custom layovers. \end{DoxyCompactList}\item 
+vector$<$ pair$<$ set$<$ \mbox{\hyperlink{classAirline}{Airline}} $>$, pair$<$ vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$, double $>$ $>$ $>$ \mbox{\hyperlink{classScript_a75eaeaa72e79aa648d1ce87c5072fbe7}{get\+Best\+Paths\+All\+Airlines\+With\+Custom\+Layovers}} (vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$ source, vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$ destination)
+\begin{DoxyCompactList}\small\item\em Find the best flight paths considering all available airlines from source to destination with custom layovers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classScript_a17c6c893a534359b2870863042f0fe56}{print\+Best\+Flight\+Details}} (pair$<$ set$<$ \mbox{\hyperlink{classAirline}{Airline}} $>$, pair$<$ vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$, double $>$$>$ trip)
+\begin{DoxyCompactList}\small\item\em Print details about the best flight trip. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_a263a3a543738eb803a8554c3d8e41700}\label{classScript_a263a3a543738eb803a8554c3d8e41700}} 
+void \mbox{\hyperlink{classScript_a263a3a543738eb803a8554c3d8e41700}{print\+Source\+And\+Destination}} ()
+\begin{DoxyCompactList}\small\item\em Print the source and destination information for the travel selection. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_a2cc40965429ea249d16fc56eda70b1ce}\label{classScript_a2cc40965429ea249d16fc56eda70b1ce}} 
+void \mbox{\hyperlink{classScript_a2cc40965429ea249d16fc56eda70b1ce}{print\+Custom\+Layovers}} ()
+\begin{DoxyCompactList}\small\item\em Print the selected layover airports chosen by the user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classScript_a76332fc6df33684d32a71bf7addba6a1}\label{classScript_a76332fc6df33684d32a71bf7addba6a1}} 
+\mbox{\hyperlink{classConsult}{Consult}} \mbox{\hyperlink{classScript_a76332fc6df33684d32a71bf7addba6a1}{consult}}
+\begin{DoxyCompactList}\small\item\em Object responsible for handling consultations. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_ac043b155ff050e53eedb2f4b009ecc01}\label{classScript_ac043b155ff050e53eedb2f4b009ecc01}} 
+\mbox{\hyperlink{classGraph}{Graph}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ \mbox{\hyperlink{classScript_ac043b155ff050e53eedb2f4b009ecc01}{data\+Graph}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classGraph}{Graph}} structure representing the relationships between airports and airlines. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_a3d12c23478285134e5095e3d4d8015ad}\label{classScript_a3d12c23478285134e5095e3d4d8015ad}} 
+bool \mbox{\hyperlink{classScript_a3d12c23478285134e5095e3d4d8015ad}{travel\+Chosen}} \{\}
+\begin{DoxyCompactList}\small\item\em Indicates whether the menu for travel has been chosen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_a9c5a2cac42fa574534e9b91ddef46f5c}\label{classScript_a9c5a2cac42fa574534e9b91ddef46f5c}} 
+bool \mbox{\hyperlink{classScript_a9c5a2cac42fa574534e9b91ddef46f5c}{custom\+Layovers\+Chosen}} \{\}
+\begin{DoxyCompactList}\small\item\em Indicates that the \char`\"{}custom layovers\char`\"{} has been selected. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_a6b6cb64265cf71eb09b70bf423752655}\label{classScript_a6b6cb64265cf71eb09b70bf423752655}} 
+bool \mbox{\hyperlink{classScript_a6b6cb64265cf71eb09b70bf423752655}{source\+Chosen}} \{\}
+\begin{DoxyCompactList}\small\item\em Indicates that the \char`\"{}source\char`\"{} has been selected. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_ae6eb315cb2f688c7367fb000a2b162c8}\label{classScript_ae6eb315cb2f688c7367fb000a2b162c8}} 
+bool \mbox{\hyperlink{classScript_ae6eb315cb2f688c7367fb000a2b162c8}{city\+Chosen\+Source}} \{\}
+\begin{DoxyCompactList}\small\item\em Indicates that the \char`\"{}source\char`\"{} has been chosen as a city. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_a0b1f66e5be8530dcdf17ac2f4b25cf74}\label{classScript_a0b1f66e5be8530dcdf17ac2f4b25cf74}} 
+bool \mbox{\hyperlink{classScript_a0b1f66e5be8530dcdf17ac2f4b25cf74}{city\+Chosen\+Destiny}} \{\}
+\begin{DoxyCompactList}\small\item\em Indicates that the \char`\"{}destination\char`\"{} has been chosen as a city. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_afdea21daaa3bc48c079be6866cb5e9b6}\label{classScript_afdea21daaa3bc48c079be6866cb5e9b6}} 
+map$<$ string, vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$ $>$ \mbox{\hyperlink{classScript_afdea21daaa3bc48c079be6866cb5e9b6}{travel\+Map}}
+\begin{DoxyCompactList}\small\item\em Stores the airport(s) of the source and the destination. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classScript_a25b7e73a06c1c060518bc08447b05051}\label{classScript_a25b7e73a06c1c060518bc08447b05051}} 
+vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$ \mbox{\hyperlink{classScript_a25b7e73a06c1c060518bc08447b05051}{custom\+Layovers}}
+\begin{DoxyCompactList}\small\item\em Stores the selected layover airports chosen by the user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles the interactive operations for the \char`\"{}\+Air Travel Flight Management System.\char`\"{}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classScript_a79d835cde71864c9c70f5381e0361669}\label{classScript_a79d835cde71864c9c70f5381e0361669}} 
+\index{Script@{Script}!Script@{Script}}
+\index{Script@{Script}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{Script()}{Script()}}
+{\footnotesize\ttfamily Script\+::\+Script (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGraph}{Graph}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ \&}]{data\+Graph,  }\item[{const std\+::set$<$ \mbox{\hyperlink{classAirline}{Airline}} $>$}]{airlines\+Info }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classScript}{Script}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\+Graph} & The graph containing airport data for the flight management system. \\
+\hline
+{\em airlines\+Info} & The set containing airlines information for the flight management system. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classScript_abafa79cf66e4a495fdd233aa920a9c6b}\label{classScript_abafa79cf66e4a495fdd233aa920a9c6b}} 
+\index{Script@{Script}!airportStatistics@{airportStatistics}}
+\index{airportStatistics@{airportStatistics}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{airportStatistics()}{airportStatistics()}}
+{\footnotesize\ttfamily void Script\+::airport\+Statistics (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$}]{airport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Displays a submenu where user can select to see the specified airport statistics or to set as source/destination if chosen the option travel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em airport} & Pointer to the \mbox{\hyperlink{classVertex}{Vertex}} containing the \mbox{\hyperlink{classAirport}{Airport}} information. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScript_aedea7693139ce5d26ce5f81ee20990e8}\label{classScript_aedea7693139ce5d26ce5f81ee20990e8}} 
+\index{Script@{Script}!countriesFlownToFromCity@{countriesFlownToFromCity}}
+\index{countriesFlownToFromCity@{countriesFlownToFromCity}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{countriesFlownToFromCity()}{countriesFlownToFromCity()}}
+{\footnotesize\ttfamily void Script\+::countries\+Flown\+To\+From\+City (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Displays the number of different countries that a city can fly to. 
+
+This function prompts the user to enter a city and the respective country, then calls a function to search and calculate the total number of different countries that can be reached by flights originating at the specified city. \mbox{\Hypertarget{classScript_a888b62837379252ed5f5494f8392967b}\label{classScript_a888b62837379252ed5f5494f8392967b}} 
+\index{Script@{Script}!destinationsAvailableWithLayOvers@{destinationsAvailableWithLayOvers}}
+\index{destinationsAvailableWithLayOvers@{destinationsAvailableWithLayOvers}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{destinationsAvailableWithLayOvers()}{destinationsAvailableWithLayOvers()}}
+{\footnotesize\ttfamily void Script\+::destinations\+Available\+With\+Lay\+Overs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$}]{airport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Displays the number of airports, cities and countries reachable within X lay-\/overs when flying out from a specific airport. 
+
+This function prompts the user to enter the number of desired lay-\/overs, then calls a function to search and calculate the number of airports, cities and countries reachable within the specified layover limit and finally it outputs those numbers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em airport} & Pointer to the \mbox{\hyperlink{classVertex}{Vertex}} containing the \mbox{\hyperlink{classAirport}{Airport}} information. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScript_adb090f23621dd83ffa0eaa63d920487d}\label{classScript_adb090f23621dd83ffa0eaa63d920487d}} 
+\index{Script@{Script}!drawBox@{drawBox}}
+\index{drawBox@{drawBox}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{drawBox()}{drawBox()}}
+{\footnotesize\ttfamily void Script\+::draw\+Box (\begin{DoxyParamCaption}\item[{const string \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Draws a box around the provided text on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & The text to be surrounded by a box. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScript_ab8499a24e46537ea85414d2c963ebf39}\label{classScript_ab8499a24e46537ea85414d2c963ebf39}} 
+\index{Script@{Script}!extraFiltersTravel@{extraFiltersTravel}}
+\index{extraFiltersTravel@{extraFiltersTravel}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{extraFiltersTravel()}{extraFiltersTravel()}}
+{\footnotesize\ttfamily void Script\+::extra\+Filters\+Travel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Handles extra filters for travel options. 
+
+Allows users to add custom layovers, view best flights, and navigate through extra filtering options for their travel. Users can select to add specific layover airports that their flights must pass through. \mbox{\Hypertarget{classScript_ad85170d42924fdddba6f3b8af9eaefb7}\label{classScript_ad85170d42924fdddba6f3b8af9eaefb7}} 
+\index{Script@{Script}!getBestPathsAllAirlines@{getBestPathsAllAirlines}}
+\index{getBestPathsAllAirlines@{getBestPathsAllAirlines}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{getBestPathsAllAirlines()}{getBestPathsAllAirlines()}}
+{\footnotesize\ttfamily vector$<$ pair$<$ set$<$ \mbox{\hyperlink{classAirline}{Airline}} $>$, pair$<$ vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$, double $>$ $>$ $>$ Script\+::get\+Best\+Paths\+All\+Airlines (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$}]{source,  }\item[{vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$}]{destination }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Find the best flight paths considering all available airlines flying from source to destination. 
+
+This function searches for the best flight paths between the given source and destination airports, considering all available airlines for each leg of the journey. It returns a vector of pairs, where each pair represents a valid flight option. Each option includes an empty set of airlines (considering all airlines), the flight path (vector of airport vertices), and the total distance of the flight.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & A vector of airport vertices representing the source airports. \\
+\hline
+{\em destination} & A vector of airport vertices representing the destination airports. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of pairs, each containing an empty set of airlines, a vector of airport vertices representing the flight path, and the total distance of the flight. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScript_a75eaeaa72e79aa648d1ce87c5072fbe7}\label{classScript_a75eaeaa72e79aa648d1ce87c5072fbe7}} 
+\index{Script@{Script}!getBestPathsAllAirlinesWithCustomLayovers@{getBestPathsAllAirlinesWithCustomLayovers}}
+\index{getBestPathsAllAirlinesWithCustomLayovers@{getBestPathsAllAirlinesWithCustomLayovers}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{getBestPathsAllAirlinesWithCustomLayovers()}{getBestPathsAllAirlinesWithCustomLayovers()}}
+{\footnotesize\ttfamily vector$<$ pair$<$ set$<$ \mbox{\hyperlink{classAirline}{Airline}} $>$, pair$<$ vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$, double $>$ $>$ $>$ Script\+::get\+Best\+Paths\+All\+Airlines\+With\+Custom\+Layovers (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$}]{source,  }\item[{vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$}]{destination }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Find the best flight paths considering all available airlines from source to destination with custom layovers. 
+
+This function searches for the best flight paths between the given source and destination airports, considering all available airlines for each leg of the journey, with custom layovers. It returns a vector of pairs, where each pair represents a valid flight option. Each option includes an empty set of airlines (considering all airlines), the flight path (vector of airport vertices), and the total distance of the flight.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & A vector of airport vertices representing the source airports. \\
+\hline
+{\em destination} & A vector of airport vertices representing the destination airports. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of pairs, each containing an empty set of airlines, a vector of airport vertices representing the flight path, and the total distance of the flight. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScript_a9db2578032d91748b4de3cf88b5e45b9}\label{classScript_a9db2578032d91748b4de3cf88b5e45b9}} 
+\index{Script@{Script}!getBestPathsSameAirlines@{getBestPathsSameAirlines}}
+\index{getBestPathsSameAirlines@{getBestPathsSameAirlines}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{getBestPathsSameAirlines()}{getBestPathsSameAirlines()}}
+{\footnotesize\ttfamily vector$<$ pair$<$ set$<$ \mbox{\hyperlink{classAirline}{Airline}} $>$, pair$<$ vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$, double $>$ $>$ $>$ Script\+::get\+Best\+Paths\+Same\+Airlines (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$}]{source,  }\item[{vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$}]{destination }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Find the best flight paths considering the same airline from source to destination. 
+
+This function searches for the best flight paths between the given source and destination airports, considering only flights operated by the same airline for each leg of the journey. It returns a vector of pairs, where each pair represents a valid flight option. Each option includes the set of airlines operating the flight, the flight path (vector of airport vertices), and the total distance of the flight.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & A vector of airport vertices representing the source airports. \\
+\hline
+{\em destination} & A vector of airport vertices representing the destination airports. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of pairs, each containing a set of airlines, a vector of airport vertices representing the flight path, and the total distance of the flight. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScript_a9da9f9c8e873ea63d5ac6264830cc4cc}\label{classScript_a9da9f9c8e873ea63d5ac6264830cc4cc}} 
+\index{Script@{Script}!getBestPathsSameAirlinesWithCustomLayovers@{getBestPathsSameAirlinesWithCustomLayovers}}
+\index{getBestPathsSameAirlinesWithCustomLayovers@{getBestPathsSameAirlinesWithCustomLayovers}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{getBestPathsSameAirlinesWithCustomLayovers()}{getBestPathsSameAirlinesWithCustomLayovers()}}
+{\footnotesize\ttfamily vector$<$ pair$<$ set$<$ \mbox{\hyperlink{classAirline}{Airline}} $>$, pair$<$ vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$, double $>$ $>$ $>$ Script\+::get\+Best\+Paths\+Same\+Airlines\+With\+Custom\+Layovers (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$}]{source,  }\item[{vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$}]{destination }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Find the best flight paths considering the same airline from source to destination with custom layovers. 
+
+This function searches for the best flight paths between the given source and destination airports, considering only flights operated by the same airline for each leg of the journey, with custom layovers. It returns a vector of pairs, where each pair represents a valid flight option. Each option includes the set of airlines operating the flight, the flight path (vector of airport vertices), and the total distance of the flight.
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & A vector of airport vertices representing the source airports. \\
+\hline
+{\em destination} & A vector of airport vertices representing the destination airports. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of pairs, each containing a set of airlines, a vector of airport vertices representing the flight path, and the total distance of the flight. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classScript_aa7dbdab2bfab5a03d935ca490ed217f1}\label{classScript_aa7dbdab2bfab5a03d935ca490ed217f1}} 
+\index{Script@{Script}!givenAirportStatistics@{givenAirportStatistics}}
+\index{givenAirportStatistics@{givenAirportStatistics}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{givenAirportStatistics()}{givenAirportStatistics()}}
+{\footnotesize\ttfamily void Script\+::given\+Airport\+Statistics (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$}]{airport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Displays 7 different statistics related to the specified airport. 
+
+This function displays 7 different statistics about the specified airport\+:
+\begin{DoxyEnumerate}
+\item Flight routes out of the airport
+\item Flights out of the airport
+\item Flights out of the airport (from different airlines)
+\item Number of different countries flown to from the airport
+\item Available airports when flying from the airport
+\item Available cities when flying from the airport
+\item Available countries when flying from the airport
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}{Parameters}
+{\em airport} & Pointer to the \mbox{\hyperlink{classVertex}{Vertex}} containing the \mbox{\hyperlink{classAirport}{Airport}} information. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScript_abd2bb21aa7f86f40e69b3b2864f7faec}\label{classScript_abd2bb21aa7f86f40e69b3b2864f7faec}} 
+\index{Script@{Script}!listAndChooseAirport@{listAndChooseAirport}}
+\index{listAndChooseAirport@{listAndChooseAirport}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{listAndChooseAirport()}{listAndChooseAirport()}}
+{\footnotesize\ttfamily void Script\+::list\+And\+Choose\+Airport (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$}]{airports,  }\item[{const string \&}]{name,  }\item[{const string \&}]{type\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+List airports based on a specified criterion (name, city, or country) and allow the user to choose one for further analysis. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em airports} & A vector of pointers to Vertex$<$\+Airport$>$, representing the airports to be listed. \\
+\hline
+{\em name} & The name to be searched for (e.\+g., airport name, city name, or country name). \\
+\hline
+{\em type\+Name} & The type of criterion for the search (e.\+g., \char`\"{}airport,\char`\"{} \char`\"{}city,\char`\"{} or \char`\"{}country\char`\"{}). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScript_abdbc2dd4c7657becb0be1b7841137960}\label{classScript_abdbc2dd4c7657becb0be1b7841137960}} 
+\index{Script@{Script}!printAirportInfo@{printAirportInfo}}
+\index{printAirportInfo@{printAirportInfo}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{printAirportInfo()}{printAirportInfo()}}
+{\footnotesize\ttfamily void Script\+::print\+Airport\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$}]{airport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Prints detailed information about an airport. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em airport} & Pointer to the \mbox{\hyperlink{classVertex}{Vertex}} containing the \mbox{\hyperlink{classAirport}{Airport}} information. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScript_a803c6dc81e1146f96169693332e1747f}\label{classScript_a803c6dc81e1146f96169693332e1747f}} 
+\index{Script@{Script}!printAirportInfoOneline@{printAirportInfoOneline}}
+\index{printAirportInfoOneline@{printAirportInfoOneline}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{printAirportInfoOneline()}{printAirportInfoOneline()}}
+{\footnotesize\ttfamily void Script\+::print\+Airport\+Info\+Oneline (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classAirport}{Airport}} \&}]{airport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Prints information about an airport in a single line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em airport} & Pointer to the \mbox{\hyperlink{classVertex}{Vertex}} containing the \mbox{\hyperlink{classAirport}{Airport}} information. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScript_a17c6c893a534359b2870863042f0fe56}\label{classScript_a17c6c893a534359b2870863042f0fe56}} 
+\index{Script@{Script}!printBestFlightDetails@{printBestFlightDetails}}
+\index{printBestFlightDetails@{printBestFlightDetails}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{printBestFlightDetails()}{printBestFlightDetails()}}
+{\footnotesize\ttfamily void Script\+::print\+Best\+Flight\+Details (\begin{DoxyParamCaption}\item[{pair$<$ set$<$ \mbox{\hyperlink{classAirline}{Airline}} $>$, pair$<$ vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$, double $>$$>$}]{trip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Print details about the best flight trip. 
+
+This function prints detailed information about the best flight trip, including the total distance, airport details, and available airlines for each leg of the journey.
+
+
+\begin{DoxyParams}{Parameters}
+{\em trip} & A pair containing a set of airlines, a vector of airport vertices representing the flight path, and the total distance of the flight. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScript_afcf214dbe2d1b6906d0c520ad7b2c8e7}\label{classScript_afcf214dbe2d1b6906d0c520ad7b2c8e7}} 
+\index{Script@{Script}!searchAirportByCityAndCountryName@{searchAirportByCityAndCountryName}}
+\index{searchAirportByCityAndCountryName@{searchAirportByCityAndCountryName}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{searchAirportByCityAndCountryName()}{searchAirportByCityAndCountryName()}}
+{\footnotesize\ttfamily void Script\+::search\+Airport\+By\+City\+And\+Country\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Search for airports based on the user-\/provided city and country names. 
+
+This function prompts the user to enter a city and country name, performs a search for airports in the specified city and country, and provides options for further actions such as setting the city and country as the source or destination for travel or to choose an airport to set it as the source/destination for travel. \mbox{\Hypertarget{classScript_a0412f0e0ecbc8ed5dc86606f7e6290d9}\label{classScript_a0412f0e0ecbc8ed5dc86606f7e6290d9}} 
+\index{Script@{Script}!selectCustomLayovers@{selectCustomLayovers}}
+\index{selectCustomLayovers@{selectCustomLayovers}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{selectCustomLayovers()}{selectCustomLayovers()}}
+{\footnotesize\ttfamily void Script\+::select\+Custom\+Layovers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Allows users to select custom layover airports. 
+
+Provides options for users to add custom layover airports by different criteria such as airport code, name, city, or coordinates. Users can choose from various options to add specific layover airports for their flights. \mbox{\Hypertarget{classScript_ad2aa427a62b9754d11f287203a7016e0}\label{classScript_ad2aa427a62b9754d11f287203a7016e0}} 
+\index{Script@{Script}!showBestFlight@{showBestFlight}}
+\index{showBestFlight@{showBestFlight}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{showBestFlight()}{showBestFlight()}}
+{\footnotesize\ttfamily void Script\+::show\+Best\+Flight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Display 2 best flight options\+: travel by same or any airline from source to destination. 
+
+This function provides the user with options to choose the best flights either within the same airline or considering all airlines. It also displays the source and destination locations user provided. \mbox{\Hypertarget{classScript_acea555168e10aae19232ea2b058f6b63}\label{classScript_acea555168e10aae19232ea2b058f6b63}} 
+\index{Script@{Script}!showListOfBestFlights@{showListOfBestFlights}}
+\index{showListOfBestFlights@{showListOfBestFlights}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{showListOfBestFlights()}{showListOfBestFlights()}}
+{\footnotesize\ttfamily void Script\+::show\+List\+Of\+Best\+Flights (\begin{DoxyParamCaption}\item[{vector$<$ pair$<$ set$<$ \mbox{\hyperlink{classAirline}{Airline}} $>$, pair$<$ vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ $\ast$ $>$, double $>$$>$$>$}]{total\+Paths }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Display a list of the best flights based on user preferences. 
+
+This function presents the user with a list of the best flight options according to the option of airlines user had chosen, including the layovers, airports involved, and total distance for each option. The user can choose a specific flight for detailed information or return to the previous menu.
+
+
+\begin{DoxyParams}{Parameters}
+{\em total\+Paths} & A vector containing information about each best flight option. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classScript_ad67cf0e9a2a37f6ca11eed2f1464811a}\label{classScript_ad67cf0e9a2a37f6ca11eed2f1464811a}} 
+\index{Script@{Script}!showMenu@{showMenu}}
+\index{showMenu@{showMenu}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{showMenu()}{showMenu()}}
+{\footnotesize\ttfamily int Script\+::show\+Menu (\begin{DoxyParamCaption}\item[{const string \&}]{menu\+Name,  }\item[{const vector$<$ \mbox{\hyperlink{structScript_1_1MenuItem}{Menu\+Item}} $>$ \&}]{menu\+Items }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Displays a menu with the provided items and handles user input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em menu\+Name} & The name/title of the menu. \\
+\hline
+{\em menu\+Items} & The list of \mbox{\hyperlink{structScript_1_1MenuItem}{Menu\+Item}} structures representing the menu items. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The selected menu item index. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+code/\mbox{\hyperlink{Script_8h}{Script.\+h}}\item 
+code/Script.\+cpp\end{DoxyCompactItemize}

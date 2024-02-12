@@ -1,0 +1,53 @@
+\hypertarget{OutputData_8h}{}\doxysection{code/\+Output\+Data.h File Reference}
+\label{OutputData_8h}\index{code/OutputData.h@{code/OutputData.h}}
+
+
+Header file containing functions to output airport data to a text file.  
+
+
+{\ttfamily \#include \char`\"{}Parse\+Data.\+h\char`\"{}}\newline
+Include dependency graph for Output\+Data.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{OutputData_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{OutputData_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{OutputData_8h_a5e286fca1134aa09bee66f44916aea70}{convert\+Data\+Graph\+To\+Text\+File}} (const \mbox{\hyperlink{classGraph}{Graph}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ \&airport\+Graph, const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Converts airport graph data into a text file format. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file containing functions to output airport data to a text file. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{OutputData_8h_a5e286fca1134aa09bee66f44916aea70}\label{OutputData_8h_a5e286fca1134aa09bee66f44916aea70}} 
+\index{OutputData.h@{OutputData.h}!convertDataGraphToTextFile@{convertDataGraphToTextFile}}
+\index{convertDataGraphToTextFile@{convertDataGraphToTextFile}!OutputData.h@{OutputData.h}}
+\doxysubsubsection{\texorpdfstring{convertDataGraphToTextFile()}{convertDataGraphToTextFile()}}
+{\footnotesize\ttfamily void convert\+Data\+Graph\+To\+Text\+File (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classGraph}{Graph}}$<$ \mbox{\hyperlink{classAirport}{Airport}} $>$ \&}]{airport\+Graph,  }\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Converts airport graph data into a text file format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em airport\+Graph} & The graph containing airport information. \\
+\hline
+{\em filename} & The name of the file to which the data will be written.\\
+\hline
+\end{DoxyParams}
+This function takes an airport graph and writes its information, including airport codes, names, locations (city, country, coordinates), and flight routes, to a specified text file. 

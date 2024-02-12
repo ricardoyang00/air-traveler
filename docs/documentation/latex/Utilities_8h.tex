@@ -1,0 +1,210 @@
+\hypertarget{Utilities_8h}{}\doxysection{code/\+Utilities.h File Reference}
+\label{Utilities_8h}\index{code/Utilities.h@{code/Utilities.h}}
+
+
+Contains utility functions for string manipulation and geographical calculations.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for Utilities.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Utilities_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{Utilities_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{Utilities_8h_a61146d2609ffbef3c80509b4335728e2}{Trim\+String}} (const std\+::string \&to\+Trim)
+\begin{DoxyCompactList}\small\item\em Trim whitespace from the beginning and end of a string. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{Utilities_8h_ab71afa9ae22b10ecf4b79f34cf208cc5}{To\+Radians}} (double degrees)
+\begin{DoxyCompactList}\small\item\em Converts degrees to radians. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{Utilities_8h_a112f41f3f93f8dfa612625726be063e5}{Harversine\+Distance}} (double lat1, double lon1, double lat2, double lon2)
+\begin{DoxyCompactList}\small\item\em Calculates the Haversine distance between two coordinates. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{Utilities_8h_a679cd14f6ab505065b571d2cba4370e8}{To\+Lower}} (const std\+::string \&input)
+\begin{DoxyCompactList}\small\item\em Converts a string to lowercase. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{Utilities_8h_aba32f27229f543df3959ee9511a7633a}{To\+Upper}} (const std\+::string \&input)
+\begin{DoxyCompactList}\small\item\em Converts a string to uppercase. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{Utilities_8h_aa6d4cd5e047190f0fa8bf759ed16dc20}{Remove\+Spaces}} (const std\+::string \&str)
+\begin{DoxyCompactList}\small\item\em Removes spaces from a string. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::string \mbox{\hyperlink{Utilities_8h_a3bd6ee67b0398de7c3501b9278cd89b9}{make\+Bold}} (const T \&value)
+\begin{DoxyCompactList}\small\item\em Formats a value in bold for terminal output. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::vector$<$ T $>$ \mbox{\hyperlink{Utilities_8h_add8862ce48e51c62471131eb5e8b3f99}{merge\+Vectors}} (const std\+::vector$<$ T $>$ \&first, const std\+::vector$<$ T $>$ \&second)
+\begin{DoxyCompactList}\small\item\em Merges two vectors into a single vector, considering the continuity of elements between the vectors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains utility functions for string manipulation and geographical calculations. 
+
+This header file provides various utility functions used for string manipulation and geographical calculations. Functions include string trimming, conversion to radians, Haversine distance calculation, converting strings to lowercase, removing spaces, and formatting text in bold for terminal output. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{Utilities_8h_a112f41f3f93f8dfa612625726be063e5}\label{Utilities_8h_a112f41f3f93f8dfa612625726be063e5}} 
+\index{Utilities.h@{Utilities.h}!HarversineDistance@{HarversineDistance}}
+\index{HarversineDistance@{HarversineDistance}!Utilities.h@{Utilities.h}}
+\doxysubsubsection{\texorpdfstring{HarversineDistance()}{HarversineDistance()}}
+{\footnotesize\ttfamily double Harversine\+Distance (\begin{DoxyParamCaption}\item[{double}]{lat1,  }\item[{double}]{lon1,  }\item[{double}]{lat2,  }\item[{double}]{lon2 }\end{DoxyParamCaption})}
+
+
+
+Calculates the Haversine distance between two coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lat1} & Latitude of the first coordinate. \\
+\hline
+{\em lon1} & Longitude of the first coordinate. \\
+\hline
+{\em lat2} & Latitude of the second coordinate. \\
+\hline
+{\em lon2} & Longitude of the second coordinate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The distance between the coordinates in kilometers. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Utilities_8h_a3bd6ee67b0398de7c3501b9278cd89b9}\label{Utilities_8h_a3bd6ee67b0398de7c3501b9278cd89b9}} 
+\index{Utilities.h@{Utilities.h}!makeBold@{makeBold}}
+\index{makeBold@{makeBold}!Utilities.h@{Utilities.h}}
+\doxysubsubsection{\texorpdfstring{makeBold()}{makeBold()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::string make\+Bold (\begin{DoxyParamCaption}\item[{const T \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Formats a value in bold for terminal output. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to be formatted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The formatted value in bold. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Utilities_8h_add8862ce48e51c62471131eb5e8b3f99}\label{Utilities_8h_add8862ce48e51c62471131eb5e8b3f99}} 
+\index{Utilities.h@{Utilities.h}!mergeVectors@{mergeVectors}}
+\index{mergeVectors@{mergeVectors}!Utilities.h@{Utilities.h}}
+\doxysubsubsection{\texorpdfstring{mergeVectors()}{mergeVectors()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::vector$<$T$>$ merge\+Vectors (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ T $>$ \&}]{first,  }\item[{const std\+::vector$<$ T $>$ \&}]{second }\end{DoxyParamCaption})}
+
+
+
+Merges two vectors into a single vector, considering the continuity of elements between the vectors. 
+
+This function combines two vectors into one, ensuring the continuity of elements between them. It verifies if the last element of the first vector is equal to the first element of the second vector. If the continuity condition is met, it creates a new merged vector starting with the elements of the first vector and appending the elements of the second vector from the second element onwards. If either of the vectors is empty or the continuity condition is not satisfied, an empty vector is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first vector to merge. \\
+\hline
+{\em second} & The second vector to merge. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A merged vector if continuity is maintained, otherwise an empty vector. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Utilities_8h_aa6d4cd5e047190f0fa8bf759ed16dc20}\label{Utilities_8h_aa6d4cd5e047190f0fa8bf759ed16dc20}} 
+\index{Utilities.h@{Utilities.h}!RemoveSpaces@{RemoveSpaces}}
+\index{RemoveSpaces@{RemoveSpaces}!Utilities.h@{Utilities.h}}
+\doxysubsubsection{\texorpdfstring{RemoveSpaces()}{RemoveSpaces()}}
+{\footnotesize\ttfamily std\+::string Remove\+Spaces (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+Removes spaces from a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & The input string to remove spaces from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The string without spaces. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Utilities_8h_a679cd14f6ab505065b571d2cba4370e8}\label{Utilities_8h_a679cd14f6ab505065b571d2cba4370e8}} 
+\index{Utilities.h@{Utilities.h}!ToLower@{ToLower}}
+\index{ToLower@{ToLower}!Utilities.h@{Utilities.h}}
+\doxysubsubsection{\texorpdfstring{ToLower()}{ToLower()}}
+{\footnotesize\ttfamily std\+::string To\+Lower (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input }\end{DoxyParamCaption})}
+
+
+
+Converts a string to lowercase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The input string to be converted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The lowercase version of the input string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Utilities_8h_ab71afa9ae22b10ecf4b79f34cf208cc5}\label{Utilities_8h_ab71afa9ae22b10ecf4b79f34cf208cc5}} 
+\index{Utilities.h@{Utilities.h}!ToRadians@{ToRadians}}
+\index{ToRadians@{ToRadians}!Utilities.h@{Utilities.h}}
+\doxysubsubsection{\texorpdfstring{ToRadians()}{ToRadians()}}
+{\footnotesize\ttfamily double To\+Radians (\begin{DoxyParamCaption}\item[{double}]{degrees }\end{DoxyParamCaption})}
+
+
+
+Converts degrees to radians. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em degrees} & The angle in degrees to be converted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The angle in radians. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Utilities_8h_aba32f27229f543df3959ee9511a7633a}\label{Utilities_8h_aba32f27229f543df3959ee9511a7633a}} 
+\index{Utilities.h@{Utilities.h}!ToUpper@{ToUpper}}
+\index{ToUpper@{ToUpper}!Utilities.h@{Utilities.h}}
+\doxysubsubsection{\texorpdfstring{ToUpper()}{ToUpper()}}
+{\footnotesize\ttfamily std\+::string To\+Upper (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input }\end{DoxyParamCaption})}
+
+
+
+Converts a string to uppercase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The input string to be converted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The uppercase version of the input string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Utilities_8h_a61146d2609ffbef3c80509b4335728e2}\label{Utilities_8h_a61146d2609ffbef3c80509b4335728e2}} 
+\index{Utilities.h@{Utilities.h}!TrimString@{TrimString}}
+\index{TrimString@{TrimString}!Utilities.h@{Utilities.h}}
+\doxysubsubsection{\texorpdfstring{TrimString()}{TrimString()}}
+{\footnotesize\ttfamily std\+::string Trim\+String (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{to\+Trim }\end{DoxyParamCaption})}
+
+
+
+Trim whitespace from the beginning and end of a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Trim} & The string to be trimmed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The trimmed string. 
+\end{DoxyReturn}

@@ -1,0 +1,303 @@
+\hypertarget{classGraph}{}\doxysection{Graph$<$ T $>$ Class Template Reference}
+\label{classGraph}\index{Graph$<$ T $>$@{Graph$<$ T $>$}}
+
+
+Class representing a directed graph.  
+
+
+
+
+{\ttfamily \#include $<$Graph.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classVertex}{Vertex}}$<$ T $>$ $\ast$ \mbox{\hyperlink{classGraph_a8b7b7465fbfd562e2a469f90a437ab75}{find\+Vertex}} (const T \&in) const
+\begin{DoxyCompactList}\small\item\em Finds a vertex in the graph based on the given information. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classGraph_a0853eac15cdf0f06d63f4b8a7820ec71}{get\+Num\+Vertex}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the number of vertices in the graph. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ T $>$ $\ast$ $>$ \mbox{\hyperlink{classGraph_a923b43995f81ad9319bbc81a1e433e64}{get\+Vertex\+Set}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the set of vertices in the graph. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGraph_a00be284ea2be3b3d0f0d2e493b70245b}{add\+Vertex}} (const T \&in)
+\begin{DoxyCompactList}\small\item\em Adds a vertex to the graph with the given information. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGraph_af9c903104ad69a7782979fa9caedf163}{remove\+Vertex}} (const T \&in)
+\begin{DoxyCompactList}\small\item\em Removes a vertex from the graph based on the given information. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGraph_a0a4a98dece3354414b767a3c23cf62e3}{add\+Edge}} (const T \&source, const T \&dest, double distance)
+\begin{DoxyCompactList}\small\item\em Adds a directed edge between two vertices in the graph. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGraph_a8949d071d45bf93e171e275462e1007a}{remove\+Edge}} (const T \&source, const T \&dest)
+\begin{DoxyCompactList}\small\item\em Removes a directed edge between two vertices in the graph. \end{DoxyCompactList}\item 
+vector$<$ T $>$ \mbox{\hyperlink{classGraph_a911798b1a89f8c4ae90ba3eee849cff8}{dfs}} () const
+\begin{DoxyCompactList}\small\item\em Performs a depth-\/first search (DFS) on the entire graph. \end{DoxyCompactList}\item 
+vector$<$ T $>$ \mbox{\hyperlink{classGraph_a510522c8221b321a82e687fe2f2cb484}{dfs}} (const T \&source) const
+\begin{DoxyCompactList}\small\item\em Performs a depth-\/first search (DFS) starting from a specific vertex in the graph. \end{DoxyCompactList}\item 
+vector$<$ T $>$ \mbox{\hyperlink{classGraph_aa47a4130165550e208e7a063fce6983a}{bfs}} (const T \&source) const
+\begin{DoxyCompactList}\small\item\em Performs a breadth-\/first search (BFS) starting from a specific vertex in the graph. \end{DoxyCompactList}\item 
+vector$<$ T $>$ \mbox{\hyperlink{classGraph_af1d4affd1f886bf598d0f4cf4a0cb7cb}{topsort}} () const
+\begin{DoxyCompactList}\small\item\em Performs topological sorting of the graph using depth-\/first search (DFS). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGraph_ac76ac8c9999e9696ffb836801603e0c2}{setup\+In\+Degree\+And\+Out\+Degree}} ()
+\begin{DoxyCompactList}\small\item\em Sets up the in\+Degree and out\+Degree of vertices in the graph. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGraph_ab2bb8011642e0d5e6a71e0981d661056}{dfs\+Visit}} (\mbox{\hyperlink{classVertex}{Vertex}}$<$ T $>$ $\ast$v, vector$<$ T $>$ \&res) const
+\begin{DoxyCompactList}\small\item\em Performs a depth-\/first search visit starting from a given vertex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGraph_a1714c4fb63ab41f69ef1be50532488a9}\label{classGraph_a1714c4fb63ab41f69ef1be50532488a9}} 
+vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ T $>$ $\ast$ $>$ \mbox{\hyperlink{classGraph_a1714c4fb63ab41f69ef1be50532488a9}{vertex\+Set}}
+\begin{DoxyCompactList}\small\item\em The collection of vertices in the graph. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGraph_a1e0cd13bd9e91a125a484a0817c030a1}\label{classGraph_a1e0cd13bd9e91a125a484a0817c030a1}} 
+int \mbox{\hyperlink{classGraph_a1e0cd13bd9e91a125a484a0817c030a1}{\+\_\+index\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The used internally. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGraph_a261998fc1e44c878c595c2b0a05680be}\label{classGraph_a261998fc1e44c878c595c2b0a05680be}} 
+stack$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ T $>$ $>$ \mbox{\hyperlink{classGraph_a261998fc1e44c878c595c2b0a05680be}{\+\_\+stack\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The stack used internally. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGraph_ab06fb542caac016248829c9e6fd11ec4}\label{classGraph_ab06fb542caac016248829c9e6fd11ec4}} 
+list$<$ list$<$ T $>$ $>$ \mbox{\hyperlink{classGraph_ab06fb542caac016248829c9e6fd11ec4}{\+\_\+list\+\_\+sccs\+\_\+}}
+\begin{DoxyCompactList}\small\item\em The list of strongly connected components. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Graph$<$ T $>$}
+
+Class representing a directed graph. 
+
+The \mbox{\hyperlink{classGraph}{Graph}} class defines a directed graph structure using vertices and edges. It supports various graph operations like adding/removing vertices, edges, performing depth-\/first search (DFS), breadth-\/first search (BFS), topological sorting, etc. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The data type of the graph vertices. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGraph_a0a4a98dece3354414b767a3c23cf62e3}\label{classGraph_a0a4a98dece3354414b767a3c23cf62e3}} 
+\index{Graph$<$ T $>$@{Graph$<$ T $>$}!addEdge@{addEdge}}
+\index{addEdge@{addEdge}!Graph$<$ T $>$@{Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{addEdge()}{addEdge()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classGraph}{Graph}}$<$ T $>$\+::add\+Edge (\begin{DoxyParamCaption}\item[{const T \&}]{source,  }\item[{const T \&}]{dest,  }\item[{double}]{distance }\end{DoxyParamCaption})}
+
+
+
+Adds a directed edge between two vertices in the graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & Information of the source vertex. \\
+\hline
+{\em dest} & Information of the destination vertex. \\
+\hline
+{\em distance} & The distance between the source and destination vertices. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the edge was added successfully, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraph_a00be284ea2be3b3d0f0d2e493b70245b}\label{classGraph_a00be284ea2be3b3d0f0d2e493b70245b}} 
+\index{Graph$<$ T $>$@{Graph$<$ T $>$}!addVertex@{addVertex}}
+\index{addVertex@{addVertex}!Graph$<$ T $>$@{Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{addVertex()}{addVertex()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classGraph}{Graph}}$<$ T $>$\+::add\+Vertex (\begin{DoxyParamCaption}\item[{const T \&}]{in }\end{DoxyParamCaption})}
+
+
+
+Adds a vertex to the graph with the given information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & The information for the new vertex. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the vertex was added successfully, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraph_aa47a4130165550e208e7a063fce6983a}\label{classGraph_aa47a4130165550e208e7a063fce6983a}} 
+\index{Graph$<$ T $>$@{Graph$<$ T $>$}!bfs@{bfs}}
+\index{bfs@{bfs}!Graph$<$ T $>$@{Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{bfs()}{bfs()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+vector$<$ T $>$ \mbox{\hyperlink{classGraph}{Graph}}$<$ T $>$\+::bfs (\begin{DoxyParamCaption}\item[{const T \&}]{source }\end{DoxyParamCaption}) const}
+
+
+
+Performs a breadth-\/first search (BFS) starting from a specific vertex in the graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & Information of the starting vertex. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector containing the vertices visited during the BFS. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraph_a911798b1a89f8c4ae90ba3eee849cff8}\label{classGraph_a911798b1a89f8c4ae90ba3eee849cff8}} 
+\index{Graph$<$ T $>$@{Graph$<$ T $>$}!dfs@{dfs}}
+\index{dfs@{dfs}!Graph$<$ T $>$@{Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{dfs()}{dfs()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+vector$<$ T $>$ \mbox{\hyperlink{classGraph}{Graph}}$<$ T $>$\+::dfs}
+
+
+
+Performs a depth-\/first search (DFS) on the entire graph. 
+
+\begin{DoxyReturn}{Returns}
+Vector containing the vertices visited during the DFS. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraph_a510522c8221b321a82e687fe2f2cb484}\label{classGraph_a510522c8221b321a82e687fe2f2cb484}} 
+\index{Graph$<$ T $>$@{Graph$<$ T $>$}!dfs@{dfs}}
+\index{dfs@{dfs}!Graph$<$ T $>$@{Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{dfs()}{dfs()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+vector$<$ T $>$ \mbox{\hyperlink{classGraph}{Graph}}$<$ T $>$\+::dfs (\begin{DoxyParamCaption}\item[{const T \&}]{source }\end{DoxyParamCaption}) const}
+
+
+
+Performs a depth-\/first search (DFS) starting from a specific vertex in the graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & Information of the starting vertex. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector containing the vertices visited during the DFS. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraph_ab2bb8011642e0d5e6a71e0981d661056}\label{classGraph_ab2bb8011642e0d5e6a71e0981d661056}} 
+\index{Graph$<$ T $>$@{Graph$<$ T $>$}!dfsVisit@{dfsVisit}}
+\index{dfsVisit@{dfsVisit}!Graph$<$ T $>$@{Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{dfsVisit()}{dfsVisit()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classGraph}{Graph}}$<$ T $>$\+::dfs\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVertex}{Vertex}}$<$ T $>$ $\ast$}]{v,  }\item[{vector$<$ T $>$ \&}]{res }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Performs a depth-\/first search visit starting from a given vertex. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & Pointer to the starting vertex. \\
+\hline
+{\em res} & Vector containing the visited vertices. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGraph_a8b7b7465fbfd562e2a469f90a437ab75}\label{classGraph_a8b7b7465fbfd562e2a469f90a437ab75}} 
+\index{Graph$<$ T $>$@{Graph$<$ T $>$}!findVertex@{findVertex}}
+\index{findVertex@{findVertex}!Graph$<$ T $>$@{Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{findVertex()}{findVertex()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classVertex}{Vertex}}$<$ T $>$ $\ast$ \mbox{\hyperlink{classGraph}{Graph}}$<$ T $>$\+::find\+Vertex (\begin{DoxyParamCaption}\item[{const T \&}]{in }\end{DoxyParamCaption}) const}
+
+
+
+Finds a vertex in the graph based on the given information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & The information to search for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the vertex if found, nullptr otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraph_a0853eac15cdf0f06d63f4b8a7820ec71}\label{classGraph_a0853eac15cdf0f06d63f4b8a7820ec71}} 
+\index{Graph$<$ T $>$@{Graph$<$ T $>$}!getNumVertex@{getNumVertex}}
+\index{getNumVertex@{getNumVertex}!Graph$<$ T $>$@{Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getNumVertex()}{getNumVertex()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \mbox{\hyperlink{classGraph}{Graph}}$<$ T $>$\+::get\+Num\+Vertex}
+
+
+
+Retrieves the number of vertices in the graph. 
+
+\begin{DoxyReturn}{Returns}
+The number of vertices in the graph. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraph_a923b43995f81ad9319bbc81a1e433e64}\label{classGraph_a923b43995f81ad9319bbc81a1e433e64}} 
+\index{Graph$<$ T $>$@{Graph$<$ T $>$}!getVertexSet@{getVertexSet}}
+\index{getVertexSet@{getVertexSet}!Graph$<$ T $>$@{Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getVertexSet()}{getVertexSet()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+vector$<$ \mbox{\hyperlink{classVertex}{Vertex}}$<$ T $>$ $\ast$ $>$ \mbox{\hyperlink{classGraph}{Graph}}$<$ T $>$\+::get\+Vertex\+Set}
+
+
+
+Retrieves the set of vertices in the graph. 
+
+\begin{DoxyReturn}{Returns}
+Vector containing pointers to all vertices in the graph. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraph_a8949d071d45bf93e171e275462e1007a}\label{classGraph_a8949d071d45bf93e171e275462e1007a}} 
+\index{Graph$<$ T $>$@{Graph$<$ T $>$}!removeEdge@{removeEdge}}
+\index{removeEdge@{removeEdge}!Graph$<$ T $>$@{Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{removeEdge()}{removeEdge()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classGraph}{Graph}}$<$ T $>$\+::remove\+Edge (\begin{DoxyParamCaption}\item[{const T \&}]{source,  }\item[{const T \&}]{dest }\end{DoxyParamCaption})}
+
+
+
+Removes a directed edge between two vertices in the graph. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & Information of the source vertex. \\
+\hline
+{\em dest} & Information of the destination vertex. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the edge was removed successfully, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraph_af9c903104ad69a7782979fa9caedf163}\label{classGraph_af9c903104ad69a7782979fa9caedf163}} 
+\index{Graph$<$ T $>$@{Graph$<$ T $>$}!removeVertex@{removeVertex}}
+\index{removeVertex@{removeVertex}!Graph$<$ T $>$@{Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{removeVertex()}{removeVertex()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classGraph}{Graph}}$<$ T $>$\+::remove\+Vertex (\begin{DoxyParamCaption}\item[{const T \&}]{in }\end{DoxyParamCaption})}
+
+
+
+Removes a vertex from the graph based on the given information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & The information to identify the vertex to be removed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the vertex was removed successfully, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraph_ac76ac8c9999e9696ffb836801603e0c2}\label{classGraph_ac76ac8c9999e9696ffb836801603e0c2}} 
+\index{Graph$<$ T $>$@{Graph$<$ T $>$}!setupInDegreeAndOutDegree@{setupInDegreeAndOutDegree}}
+\index{setupInDegreeAndOutDegree@{setupInDegreeAndOutDegree}!Graph$<$ T $>$@{Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{setupInDegreeAndOutDegree()}{setupInDegreeAndOutDegree()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classGraph}{Graph}}$<$ T $>$\+::setup\+In\+Degree\+And\+Out\+Degree}
+
+
+
+Sets up the in\+Degree and out\+Degree of vertices in the graph. 
+
+Calculates and assigns the in\+Degree and out\+Degree for each vertex in the graph. The in\+Degree of a vertex is the count of incoming edges, while the out\+Degree is the count of outgoing edges. This function iterates through all edges in the graph to update the in\+Degree and out\+Degree of each vertex. Note\+: This function assumes that the graph has been appropriately constructed with vertices and edges. \mbox{\Hypertarget{classGraph_af1d4affd1f886bf598d0f4cf4a0cb7cb}\label{classGraph_af1d4affd1f886bf598d0f4cf4a0cb7cb}} 
+\index{Graph$<$ T $>$@{Graph$<$ T $>$}!topsort@{topsort}}
+\index{topsort@{topsort}!Graph$<$ T $>$@{Graph$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{topsort()}{topsort()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+vector$<$ T $>$ \mbox{\hyperlink{classGraph}{Graph}}$<$ T $>$\+::topsort}
+
+
+
+Performs topological sorting of the graph using depth-\/first search (DFS). 
+
+\begin{DoxyReturn}{Returns}
+Vector containing the topologically sorted vertices. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+code/\mbox{\hyperlink{Graph_8h}{Graph.\+h}}\end{DoxyCompactItemize}

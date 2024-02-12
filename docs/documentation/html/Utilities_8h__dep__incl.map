@@ -1,0 +1,9 @@
+<map id="code/Utilities.h" name="code/Utilities.h">
+<area shape="rect" id="node1" title="Contains utility functions for string manipulation and geographical calculations." alt="" coords="82,5,202,32"/>
+<area shape="rect" id="node2" href="$Data_8h.html" title="Header file containing structures and classes related to airport and airline data representation." alt="" coords="92,80,192,107"/>
+<area shape="rect" id="node3" href="$Graph_8h.html" title="Header file containing structures and classes related to graph representation." alt="" coords="43,155,151,181"/>
+<area shape="rect" id="node4" href="$ParseData_8h.html" title="Header file containing functionalities to parse data related to the Air Travel Flights." alt="" coords="75,229,209,256"/>
+<area shape="rect" id="node5" href="$Consult_8h.html" title="Header file providing functionalities for analyzing air travel flight data." alt="" coords="5,304,124,331"/>
+<area shape="rect" id="node7" href="$OutputData_8h.html" title="Header file containing functions to output airport data to a text file." alt="" coords="149,304,293,331"/>
+<area shape="rect" id="node6" href="$Script_8h.html" title="Defines the Script class for interacting with the &quot;Air Travel Flight Management System&quot;." alt="" coords="89,379,195,405"/>
+</map>
