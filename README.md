@@ -39,6 +39,6 @@ $ ./run
 Find the complete documentation in the [Doxygen HTML documentation](docs/documentation/html/index.html).
 
 ## Main Contributors
-- Bruno Huang (up202207517@fe.up.pt)
 - Ricardo Yang (up202208465@fe.up.pt)
+- Bruno Huang (up202207517@fe.up.pt)
 
