@@ -16,7 +16,7 @@ a range of functionalities to explore, query, and manage air travel information 
 - **Customized Layovers:** Enable users to personalize layovers during their travel.
 - **User-Friendly Interface:** Enjoy a simple and intuitive menu-driven system for seamless navigation.
 
-## Installing
+## Installation
 To build the program code using **makefile**:
 
 1. Clone the repository:
