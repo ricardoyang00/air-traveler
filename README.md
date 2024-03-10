@@ -2,7 +2,7 @@
 ### AED 2023/24 - Project 02, Group G110
 
 ## Overview
-> Welcome to our Air Travel Flight Management System! This system is a comprehensive
+Welcome to our Air Travel Flight Management System! This system is a comprehensive
 solution designed to handle and analyze diverse data pertaining to airports, airlines,
 flights, and routes within the aviation domain. It's a versatile toolset that provides
 a range of functionalities to explore, query, and manage air travel information efficiently.
