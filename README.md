@@ -21,8 +21,8 @@ To build the program code using **makefile**:
 
 1. Clone the repository:
 ```bash
-$ git clone git@github.com:ricardoyang00/feup-aed-02.git
-$ cd feup-aed-02/
+$ git clone git@github.com:ricardoyang00/air-traveler.git
+$ cd air-traveler/
 ```
 
 2. Build the program using make:
