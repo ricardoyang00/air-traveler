@@ -38,10 +38,6 @@ $ ./run
 ## Documentation
 Find the complete documentation in the [Doxygen HTML documentation](docs/documentation/html/index.html).
 
-## Main Contributors
-- Ricardo Yang (up202208465@fe.up.pt)
-- Bruno Huang (up202207517@fe.up.pt)
-
 <br>
 
 __This project was developed for [AED](https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=520316) at @FEUP__
